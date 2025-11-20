@@ -13,12 +13,12 @@ To calculate DC-MF and MF dynamics, go to line 15 in `main.py`. For DC-MF dynami
 
 To simulate the small half-wavelength cavity (Section 3 in the paper), rename `input_ShortCavity.py` to `input.py`. Alternatively, to simulate the long cavity (Section 4 in the paper), rename `input_LongCavity.py` to `input.py`
 
+In the function `Wigner()` in both `mixQC_DCMF_Foc.py` and `mixQC_MF_Foc.py`, you can choose to use Wigner sampling (first 5 lines) or Focused sampling (last 4 lines).
+
 To start the run, execute 
 ```
 python main.py
 ```
-
-In the function `Wigner()` in both `mixQC_DCMF_Foc.py` and `mixQC_MF_Foc.py`, you can choose to use Wigner sampling or Focused sampling.
 
 
 Alternatively, to run a simulation with quantum exact reference (CISD), and execute:
