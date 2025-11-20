@@ -19,10 +19,18 @@ To start the run, execute
 ```
 python main.py
 ```
-
-
-Alternatively, to run a simulation with quantum exact reference (CISD), and execute:
+To visualize the data, execute (for both DC-MF and MF dynamics)
 ```
-python CISD.py
+python analyze.py
+```
+
+
+To run a simulation with quantum exact reference (CISD), and execute:
+```
+python CISD_2LS.py
 ```
 The input file is the same as the ones for DC-MF and MF calculations.
+To then calculate the optical field intensity (Fig. 6) for CISD, execute
+```
+python calc_ele_int_elewise_fast.py
+```
